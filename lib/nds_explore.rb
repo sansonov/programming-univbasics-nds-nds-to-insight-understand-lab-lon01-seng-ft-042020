@@ -9,7 +9,9 @@ end
 
 def print_first_directors_movie_titles
   
-  x = 0
+end
+
+x = 0
   while x < nds.length do
     puts "Linha #{x} has #{nds[x]} columns"
  
@@ -29,7 +31,3 @@ def print_first_directors_movie_titles
     end
   x += 1
   end
-
-  return nd
-  
-end
