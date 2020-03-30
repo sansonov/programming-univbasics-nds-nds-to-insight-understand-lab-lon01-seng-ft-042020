@@ -18,7 +18,7 @@ while x < nds.length do
     coord = "#{x}, #{y}"
     z = nds[x][y].length
     # Remember \t is a TAB character for indentation
-    puts "\tCoordinate [#{coord}] points to an #{vm[row_index][column_index].class} of length #{inner_len}"
+    puts "\tCoordinate [#{coord}] points to an #{nds[x][y].class} of length #{z}"
  
     inner_index = 0
     while inner_index < inner_len do
