@@ -22,7 +22,7 @@ while x < nds.length do
  
     z = 0
     while z < tam_z do
-      puts "\t\t (#{coord}, #{inner_inde}) is: #{vm[row_index][column_index][inner_index]}"
+      puts "\t\t (#{coord}, #{z}) is: #{nds[x][y][z]}"
       inner_index += 1
     end
  
