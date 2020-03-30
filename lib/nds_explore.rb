@@ -10,27 +10,25 @@ end
 def print_first_directors_movie_titles
   
   x = 0
-while x < nds.length do
-  puts "Linha #{x} has #{nds[x]} columns"
+  while x < nds.length do
+    puts "Linha #{x} has #{nds[x]} columns"
  
-  y = 0
-  while y < vm[x].length do
-    coord = "#{x}, #{y}"
-    tam_z = nds[x][y].length
-    # Remember \t is a TAB character for indentation
-    puts "\tCoordinate [#{coord}] points to an #{nds[x][y].class} of length #{tam_z}"
+    y = 0
+    while y < vm[x].length do
+      coord = "#{x}, #{y}"
+      tam_z = nds[x][y].length
+      # Remember \t is a TAB character for indentation
+      puts "\tCoordinate [#{coord}] points to an #{nds[x][y].class} of length #{tam_z}"
  
-    z = 0
-    while z < tam_z do
-      puts "\t\t (#{coord}, #{z}) is: #{nds[x][y][z]}"
-      inner_index += 1
+      z = 0
+      while z < tam_z do
+        puts "\t\t (#{coord}, #{z}) is: #{nds[x][y][z]}"
+        z += 1
+      end
+    y += 1
     end
- 
-    column_index += 1
+  x += 1
   end
- 
-  row_index += 1
-end
 
   return nd
   
